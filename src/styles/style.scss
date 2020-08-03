@@ -1,0 +1,78 @@
+.textField {
+  width: 250px !important;
+}
+.login_card {
+  margin-top: 150px !important;
+  margin-bottom: 11px !important;
+  text-align: center !important;
+  padding-top: 50px !important;
+  padding-right: 4% !important;
+  padding-left: 4% !important;
+  padding-bottom: 50px !important;
+}
+.login-background {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/apartment-erp.appspot.com/o/web%2Fapartment_app_bg.jpg?alt=media&token=1a6d93ec-6976-4a89-972e-701af023d832");
+  height: 105vh !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login_heading {
+  margin-top: 10px !important;
+  font-size: 100% !important;
+  text-align: center !important;
+}
+.drawer_img {
+  width: 130px !important;
+  height: 130px !important;
+  margin: auto !important;
+}
+.profile-name {
+  text-align: center;
+}
+.drawer_text {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 16px !important;
+}
+.drawer_icons {
+  font-size: 16px !important;
+}
+.drawer_expansion_summary {
+  text-decoration: none;
+  background-color: white;
+  padding-left: 18;
+  font-size: 16px;
+}
+.table_cells {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.unit_details_add_btn {
+  // float: right;
+  display: inline-block;
+  text-align: right !important;
+}
+.unit_details_title {
+  display: inline-block;
+}
+//below webkit shows scroll bar everywhere
+// ::-webkit-scrollbar {
+//     -webkit-appearance: none;
+//     width: 10px;
+// }
+// ::-webkit-scrollbar-thumb {
+//     border-radius: 5px;
+//     background-color: rgba(0,0,0,.5);
+//     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+// }
+.btn_float {
+  float: right;
+}
+.font{
+  font-size: 20px !important;
+}
+.refreshBtn
+{
+  margin-top: 23px !important;
+  margin-left: 5px !important;
+}

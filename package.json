@@ -1,0 +1,70 @@
+{
+  "name": "socus",
+  "homepage": "https://socus.com/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "^4.9.7",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.46",
+    "@material-ui/pickers": "^3.2.10",
+    "@syncfusion/ej2-base": "^17.4.51",
+    "@syncfusion/ej2-react-navigations": "^17.4.55",
+    "axios": "^0.19.2",
+    "date-fns": "^2.11.1",
+    "firebase": "^7.14.4",
+    "install": "^0.13.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.7",
+    "prismjs": "^1.19.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.11.1",
+    "react": "^16.13.1",
+    "react-circular-progressbar": "^2.0.1",
+    "react-collapsible": "^2.7.0",
+    "react-cursor-zoom": "^1.3.0",
+    "react-dom": "^16.13.1",
+    "react-graceful-image": "^1.2.12",
+    "react-image-zoom": "^1.3.1",
+    "react-linkify": "^1.0.0-alpha",
+    "react-moment": "^0.9.7",
+    "react-pose": "^4.0.10",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-simpletabs": "^0.7.0",
+    "react-slick": "^0.25.2",
+    "react-slideshow-image": "^1.4.0",
+    "react-star-rating-component": "^1.4.1",
+    "react-swipeable-views": "^0.13.9",
+    "react-syntax-highlighter": "^10.3.0",
+    "react-tab-panel": "^2.2.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
