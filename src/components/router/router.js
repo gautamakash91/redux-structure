@@ -22,7 +22,7 @@ const styles = theme => ({
 });
 class Routes extends Component {
   render() {
-    const { login, classes, onLogout } = this.props;
+    const { login, classes } = this.props;
     let body;
     body =
         <div className={classes.root}>

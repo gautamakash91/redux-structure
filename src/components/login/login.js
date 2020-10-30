@@ -17,7 +17,7 @@ class Login extends Component {
     };
   }
   componentDidMount() {
-    this.props.clear_login()
+    // this.props.clear_login()
     if (localStorage.getItem('socus_token') !== null) {
       return <Redirect to="/" />
     }
@@ -31,9 +31,7 @@ class Login extends Component {
       snackbar,
       close_snack_bar,
     } = this.props;
-    if (login.type === "A" || login.type === "E" || login.type === "SA") {
-      return <Redirect to="/dashboard" />
-    }
+
     return (
       <div>
         <Grid className="login-background">
@@ -50,7 +48,6 @@ class Login extends Component {
                 <Grid container justify="center">
                   <Grid item xs={12} >
                     <TextField
-                      id="outlined-email-input"
                       label="Email"
                       type="email"
                       fullWidth={true}
@@ -96,21 +93,21 @@ class Login extends Component {
                       color="primary"
                       fullWidth
                       margin="normal"
-                      onClick={() => { login_email(login) }}
+                      // onClick={() => { login_email(login) }}
                     >
                       Log In
-                      </Button>
+                    </Button>
                   </Grid>
                 </Grid>
               </Card>
             </Grid>
           </Grid>
           
-          <Snackbar
+          {/* <Snackbar
             open={snackbar.response_received}
             close_snack_bar={close_snack_bar}
             message={snackbar.message}
-          />
+          /> */}
         </Grid>
       </div>
     );
