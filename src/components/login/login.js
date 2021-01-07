@@ -5,31 +5,14 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Snackbar from "../snackbar/snackbar";
 import "../../styles/style.scss";
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-      password: "",
-    };
-  }
-  componentDidMount() {
-    // this.props.clear_login()
-    if (localStorage.getItem('socus_token') !== null) {
-      return <Redirect to="/" />
-    }
-  }
   render() {
     const {
       login,
       setEmail,
-      setPwd,
-      login_email,
-      snackbar,
-      close_snack_bar,
+      setPwd
     } = this.props;
 
     return (
@@ -56,11 +39,6 @@ class Login extends Component {
                       required={true}
                       value={login.email}
                       onChange={(event) => { setEmail(event.target.value); }}
-                      onKeyPress={event => {
-                        if (event.key === 'Enter' && login.email !== "" && login.password !== "") {
-                          login_email(login)
-                        }
-                      }}
                     />
                   </Grid>
                   <Grid item xs={12} >
@@ -75,11 +53,6 @@ class Login extends Component {
                       value={login.password}
                       onChange={(event) => {
                         setPwd(event.target.value);
-                      }}
-                      onKeyPress={event => {
-                        if (event.key === 'Enter' && login.email !== "" && login.password !== "") {
-                          login_email(login)
-                        }
                       }}
                     />
                   </Grid>
@@ -102,12 +75,7 @@ class Login extends Component {
               </Card>
             </Grid>
           </Grid>
-          
-          {/* <Snackbar
-            open={snackbar.response_received}
-            close_snack_bar={close_snack_bar}
-            message={snackbar.message}
-          /> */}
+        
         </Grid>
       </div>
     );

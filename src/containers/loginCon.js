@@ -6,7 +6,7 @@ import {
   setPwd
 } from "../actions/login/loginActions";
 
-export class Controller extends Component {
+export class LoginCon extends Component {
   render() {
     return (
       <Login {...this.props} />
@@ -30,4 +30,5 @@ export const mapDispatchToProps = dispatch => {
     }
   };
 };
+
 export default connect(mapStateToProps, mapDispatchToProps)(Login);

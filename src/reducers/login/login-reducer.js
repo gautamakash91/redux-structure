@@ -4,9 +4,9 @@ import {
 } from "../../constants/login/ActionTypes";
 
 const initial_state = {
-  email: "akash@gmail.com",
+  email: "",
   password: "",
-  type: "A"
+  type: ""
 };
 
 export default function reducer(state = initial_state, action) {

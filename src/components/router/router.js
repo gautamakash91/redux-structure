@@ -23,18 +23,14 @@ const styles = theme => ({
 class Routes extends Component {
   render() {
     const { login, classes } = this.props;
-    let body;
-    body =
+
+    return (
+      <Router>
         <div className={classes.root}>
           <main className={classes.content2}>
             <Route path="/" component={Login} />
           </main>
         </div>
-        
-      
-    return (
-      <Router>
-        {body}
       </Router>
     );
   }

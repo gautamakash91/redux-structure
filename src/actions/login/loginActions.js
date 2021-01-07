@@ -3,16 +3,16 @@ import {
   SET_PASSWORD
 } from "../../constants/login/ActionTypes";
 
-export function setEmail(payload) {
+export function setEmail(email) {
   return {
     type: SET_EMAIL,
-    payload: payload
+    payload: email
   };
 }
 
-export function setPwd(payload) {
+export function setPwd(password) {
   return {
     type: SET_PASSWORD,
-    payload: payload
+    payload: password
   };
 }
