@@ -4,6 +4,8 @@ import {
   Route
 } from "react-router-dom";
 import Login from "../../containers/loginCon";
+import SignupCon from "../../containers/signup/signupCon";
+
 import {
   withStyles
 } from "@material-ui/core";
@@ -28,7 +30,8 @@ class Routes extends Component {
       <Router>
         <div className={classes.root}>
           <main className={classes.content2}>
-            <Route path="/" component={Login} />
+            <Route exact path="/" component={Login} />
+            <Route path="/signup" component={SignupCon} />
           </main>
         </div>
       </Router>

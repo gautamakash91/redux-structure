@@ -15,6 +15,8 @@ class Login extends Component {
       setPwd
     } = this.props;
 
+    console.log(this.props);
+    
     return (
       <div>
         <Grid className="login-background">

@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import Login from "../components/login/login";
 import {
   setEmail,
-  setPwd
+  setPwd,
+  validateEmail
 } from "../actions/login/loginActions";
 
 export class LoginCon extends Component {
@@ -16,7 +17,8 @@ export class LoginCon extends Component {
 
 export const mapStateToProps = store => {
   return {
-    login: store.login
+    login: store.login,
+    signup: store.signup
   };
 };
 
@@ -27,6 +29,9 @@ export const mapDispatchToProps = dispatch => {
     },
     setPwd: (payload) => {
       dispatch(setPwd(payload));
+    },
+    validateEmail: (email) => {
+      dispatch(validateEmail(email));
     }
   };
 };
