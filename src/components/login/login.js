@@ -14,8 +14,6 @@ class Login extends Component {
       setEmail,
       setPwd
     } = this.props;
-
-    console.log(this.props);
     
     return (
       <div>
@@ -29,7 +27,7 @@ class Login extends Component {
                 />
                 <Typography className="login_heading">
                   SIGN IN
-                  </Typography>
+                </Typography>
                 <Grid container justify="center">
                   <Grid item xs={12} >
                     <TextField
@@ -42,6 +40,7 @@ class Login extends Component {
                       value={login.email}
                       onChange={(event) => { setEmail(event.target.value); }}
                     />
+                    {login.email}
                   </Grid>
                   <Grid item xs={12} >
                     <TextField
@@ -57,6 +56,7 @@ class Login extends Component {
                         setPwd(event.target.value);
                       }}
                     />
+                    
                   </Grid>
                   <br /><br /><br />
                   <Grid item xs={12}>

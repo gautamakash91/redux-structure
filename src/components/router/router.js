@@ -4,7 +4,6 @@ import {
   Route
 } from "react-router-dom";
 import Login from "../../containers/loginCon";
-import SignupCon from "../../containers/signup/signupCon";
 
 import {
   withStyles
@@ -31,7 +30,6 @@ class Routes extends Component {
         <div className={classes.root}>
           <main className={classes.content2}>
             <Route exact path="/" component={Login} />
-            <Route path="/signup" component={SignupCon} />
           </main>
         </div>
       </Router>

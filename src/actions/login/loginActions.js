@@ -17,10 +17,3 @@ export function setPwd(password) {
     payload: password
   };
 }
-
-export function validateEmail(email){
-  return {
-    type: SET_EMAIL_VALID,
-    payload: email
-  }
-}

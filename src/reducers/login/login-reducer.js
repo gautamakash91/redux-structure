@@ -4,7 +4,7 @@ import {
 } from "../../constants/login/ActionTypes";
 
 const initial_state = {
-  email: "",
+  email: "akash@email.com",
   password: "",
   type: ""
 };
